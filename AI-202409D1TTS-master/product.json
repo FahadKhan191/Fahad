@@ -1,0 +1,35 @@
+[
+    {
+        "id" : 1 ,
+        "name" : "AdidasAQ12" ,
+        "price" : "16000" ,
+        "description" : "Hello" ,
+        "qty" : 50 ,
+        "image" : "image/s1.jpg" 
+    },
+    {
+        "id" : 2 ,
+        "name" : "AdidasAQ21" ,
+        "price" : 20000 ,
+        "description" : "Hello" ,
+        "qty" : 53 ,
+        "image" : "image/s2.jpg" 
+    },
+    {
+        "id" : 3 ,
+        "name" : "AdidasAQ15" ,
+        "price" : 30000 ,
+        "description" : "Hello",
+        "qty" : 34 ,
+        "image" : "image/s3.avif" 
+    },
+    {
+        "id" : 4 ,
+        "name" : "AdidasAQ17" ,
+        "price" : 32000 ,
+        "description" : "Hello" ,
+        "image" : "image/s1.jpg" 
+    }
+    
+
+]
