@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/AI-202409D1TTS-master/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,8 +24,8 @@
 
 
 
-    <script src="/Jquery/jquery-3.7.1.min.js"></script>
-    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/AI-202409D1TTS-master/Jquery/jquery-3.7.1.min.js"></script>
+    <script src="/AI-202409D1TTS-master/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script>
 
         let productRow1 = $("#r1");
@@ -37,10 +37,9 @@
             success : function (response){
                 console.log(response);
                 $.each(response,function(key , value){
-                        //   console.log(value.price);
+                
                         col+=  `<div class="col-md-3">
         
-        <div class="row" id="r1">
             <div class="card text-start">
                 <img class="card-img-top" src='`+value.image+`' alt="Title" />
                 <div class="card-body">
