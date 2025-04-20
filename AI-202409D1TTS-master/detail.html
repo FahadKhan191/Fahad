@@ -8,21 +8,60 @@
 </head>
 <body>
     <div class="container mt-5 p-5">
-        <div class="row justify-content-around text-justify">
-
-            <div class="col-md-5">
+        <div class="text-center p-3">Detail Page</div>
+        <div class="row justify-content-around text-justify" id="productDetail">
+            
                 
+
             </div>
             <div class="col-md-6">
                 
+                
+                
+
             </div>
+            
+
         </div>
-
     </div>
-
-
-
+    
     <script src="/AI-202409D1TTS-master/Jquery/jquery-3.7.1.min.js"></script>
     <script src="/AI-202409D1TTS-master/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script>
+        let url = location.href;
+        console.log=(url);
+        let urlObj = new URL(url);
+        console.log=(urlObj);
+        let productImage = urlObj.searchParams.get('pImage');
+        let productName = urlObj.searchParams.get('pName');
+        let productPrice = urlObj.searchParams.get('pPrice');
+        let productDes = urlObj.searchParams.get('pDes');
+        let productQty = urlObj.searchParams.get('pQty');
+        $("#productDetail").html(
+
+            `<div class="col-md-5">
+                <div class="card text-start">
+                    <img class="card-img-top" src="`+productImage+`" alt="Title" />
+
+                    </div>
+
+                            </div>
+
+
+                           <div class="col-md-6">
+                <div class="card text-start">
+
+                    <div class="card-body">
+                        <h4 class="card-title">`+productName+`</h4>
+                        <p class="card-text pt-5">`+productDes+`</p>
+                        <p class="card-text pt-2">`+productPrice+`</p>
+                        <p class="card-text pt-2">`+productQty+`</p>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                `
+
+        )
+    </script>
 </body>
 </html>
