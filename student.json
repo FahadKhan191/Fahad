@@ -1,0 +1,9 @@
+{
+    "studentId" : 1612193 ,
+    "studentName" : "Fahad" ,
+    "studentAge" : 19 ,
+    "stuudentNic" : "true" ,
+    "studentHobbies" : ["reading" , "coding"] ,
+    "studentAddress" : {"karachi" : "Saddar Town" , "Lahore" : "Gulshan"} 
+
+}
